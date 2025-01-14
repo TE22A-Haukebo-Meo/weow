@@ -9,6 +9,6 @@ public class App {
         Book b3 = new Book("Vid hägerns skarpa skri", 400);
 
         b1.turnPage();
-        System.out.println(b1.currentPage);
+        System.out.println(b1.GetCurrentPage());
     }
 }

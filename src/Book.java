@@ -1,7 +1,7 @@
 public class Book {
     String name;
     int pages;
-    public int currentPage;
+    private int currentPage;
 
     Book(String name, int pages){
         this.name = name;
@@ -10,5 +10,9 @@ public class Book {
 
     void turnPage(){
         currentPage += 1;
+    }
+
+    int GetCurrentPage(){
+        return currentPage;
     }
 }
