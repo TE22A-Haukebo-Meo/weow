@@ -7,5 +7,8 @@ public class App {
         Book b1 = new Book("På en kudde av gräs", 350);
         Book b2 = new Book("Över näktergalens golv", 300);
         Book b3 = new Book("Vid hägerns skarpa skri", 400);
+
+        b1.turnPage();
+        System.out.println(b1.currentPage);
     }
 }
