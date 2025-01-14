@@ -10,5 +10,7 @@ public class App {
 
         b1.turnPage();
         System.out.println(b1.GetCurrentPage());
+        System.out.println(b2.GetName());
+        System.out.println(b3.GetPages());
     }
 }

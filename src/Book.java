@@ -1,6 +1,6 @@
 public class Book {
-    String name;
-    int pages;
+    private String name;
+    private int pages;
     private int currentPage;
 
     Book(String name, int pages){
@@ -14,5 +14,13 @@ public class Book {
 
     int GetCurrentPage(){
         return currentPage;
+    }
+
+    String GetName(){
+        return name;
+    }
+
+    int GetPages(){
+        return pages;
     }
 }
