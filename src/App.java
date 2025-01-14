@@ -5,7 +5,34 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner tb = new Scanner(System.in);
 
-        Worker w1 = new Worker("john", 41);
+        System.out.println("Vad kranka idag?");
+        System.out.println("1. Garfikort");
+        System.out.println("2. process");
+        System.out.println("3. Hård disk");
+
+        ArrayList<Hardware> cool = new ArrayList<>();
+
+        int val = tb.nextInt();
+        if (val == 1) {
+            Graphic g = new Graphic();
+            System.out.println("hur big?");
+            g.SetGmemory(tb.nextInt());
+            cool.add(g);
+        }
+        else if (val == 2) {
+            Process p = new Process();
+            System.out.println("hur quicu?");
+            p.SetSpeed(tb.nextInt());
+            cool.add(p);
+        }
+        else if (val == 3) {
+            HardDisk h = new HardDisk();
+            System.out.println("big?");
+            h.SetStorage(tb.nextInt());
+            cool.add(h);
+        }
+
+        /*Worker w1 = new Worker("john", 41);
         WhiteCollar w2 = new WhiteCollar("sigma", 33);
         BlueCollar w3 = new BlueCollar("daquaviontavious", 19);
 
@@ -22,7 +49,7 @@ public class App {
         w3.Destroy();
         w2.AttendMeeting();
         w2.DoSpreadsheets();
-        w2.DrinkCoffee();
+        w2.DrinkCoffee();*/
         
         
         /*Rock r1 = new Rock(111);
